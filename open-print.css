@@ -1,0 +1,82 @@
+/* This is an open source CSS template for printing websites. It helps you getting started with CSS print-settings to save ink and paper and to make your website more accessible for open and home publishing methods. Originally created for the Open Design Manifesto _www.into-the-open.de,_ the project was developed within the context of a class at the _Academy of Fine Arts Saar._ Christian Dietz, 2020. */
+
+@media print {
+	/* Cover styles */
+	@page :first {
+		margin: 0;
+	}
+
+	/* Margins for all content pages */
+	@page {
+		margin: 0;
+	}
+
+	/* Hides unnecessary elements and all elements with class="dont-print" */
+	nav, header, footer, .dont-print {
+		display: none;
+	}
+
+	/* Add class="print-only" to all elements you want to show only when printing */
+	.print-only {
+		display: block;
+	}
+
+	/* Add that class to an element after which there should be no page break */
+	.print_no-page-break {
+		page-break-after: avoid;
+	}
+
+	/* Add that class to an element after which there should be a page break */
+	.print_page-break-after {
+		page-break-after: always;
+	}
+
+	/* Adds a page break after your main headline (creates a title for the chapter) */
+	h1 {
+		page-break-after: always;
+	}
+
+	/* Fixes hover issues */
+	*:hover {
+		background: transparent !important;
+	}
+
+	/* IMPORTANT – Puts all otherwise unvisible links automatically behind the hyper-reference */
+	a:after {
+		content: " (" attr(href) ") ";
+	}
+
+	/* Limit the size of images before printing to save ink and paper */
+	img {
+		max-width: 6cm;
+	}
+
+	/* Convert all your texts in point sizes */
+	h1 {
+		font-size: 38pt !important;
+		line-height: 44pt !important;
+		letter-spacing: -0; /* Usually you want to decrease letter-spacing and line-height on bigger headlines */
+	}
+
+	h2 {
+		font-size: 18pt !important;
+		line-height: 21pt !important;
+		letter-spacing: -0; /* Usually you want to decrease letter-spacing and line-height on bigger headlines */
+	}
+
+	h3, h4, h5, h6, p, li, a, table {
+		font-size: 12pt !important;
+		line-height: 16pt !important;
+	}
+
+	blockquote, aside p, aside h3, aside a, small {
+		font-size: 9pt !important;
+		line-height: 12pt !important;
+		letter-spacing: .25px !important; /* Usually you want to increase letter-spacing on smaller texts */
+	}
+}
+
+/* You can also edit print settings for smaller paper sizes by adding a max-width call to the CSS-targeting, e.g. A5 */
+@media print and (max-width: 148mm) {
+
+}
