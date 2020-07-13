@@ -1,2 +1,4 @@
 # Open-Print-CSS
-This is an Open Source Print-CSS-Template, first version 2020. It helps you getting started with Print-CSS-Settings for your webpage to save ink and paper and make it more accessible for open and home publishing methods. It was originally published by the Open Design Manifesto www.into-the-open.de in 2020, created by Christian Dietz.
+Open-Print-CSS is an Open Source Print-CSS-Template, that helps you getting started with Print-CSS-Settings for your webpage. It saves you ink and paper and makes your website more accessible for open and home publishing methods. It was originally created by the Open Design Manifesto _www.into-the-open.de_ in 2020 by Christian Dietz for a class at the _Academy of Fine Arts Saar._
+
+Learn more about open home publishing on _www.into-the-open.de/open-publishing.html_ (english version coming soon!)
